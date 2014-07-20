@@ -1,5 +1,4 @@
-See the site: [Link to HOMEBASE][id]
+See the site: [Link to HOMEBASE](http://www.pdx.finer-code.com)
 =============
 
 REPO/SITE name will change SOON...
-[id]:(http://www.pdx.finer-code.com)
