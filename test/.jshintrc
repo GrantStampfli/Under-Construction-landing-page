@@ -18,9 +18,7 @@
   "trailing": true,
   "smarttabs": true,
   "globals": {
-    "PdxSweetsite": true,
-    "Ember": true,
-    "DS": true,
+    "UnderConstructionSweetsite": true,
 
     "describe": true,
     "it": true,
@@ -29,16 +27,7 @@
     "after": true,
     "afterEach": true,
     "expect": true,
-    "sinon": true,
-
-    "find": true,
-    "visit": true,
-    "click": true,
-    "fillIn": true,
-    "andThen": true,
-    "currentRouteName": true,
-    "currentPath": true,
-    "currentURL": true
+    "sinon": true
   },
   "expr": true
 }
