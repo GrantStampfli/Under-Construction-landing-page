@@ -49,15 +49,79 @@
         });
       </script>
     </div>
-
-
-  <div class="content">
-
-  </div>
+    <div class="interface">
+      <div id="about">
+        <div class="content">
+          <div class="wrap large">
+            <h3 class="topic">About</h3>
+            <h4 class="summary">{ my work ethic. }</h4>
+          </div>
+        <div class="wrap large">
+          <p class="quote">I am a Web developer who enjoys making single page web-apps.</p>
+          <p class="quote">I have extensive front-end development experience while being proficient in node, jquery, and full stack javaScript development.</p>
+          <p class="quote">On the back-end, I've done extensive work with node building api's for use in ember.js.</p>
+        </div>
+        </div>
+        <script type="text/javascript"></script>
+      </div>
+      <div id="contact">
+        <div class="content">
+          <div class="wrap large">
+            <h3 class="topic">Contact</h3>
+            <h4 class="summary">Write me right now.</h4>
+          </div>
+          <div class="wrap large">
+            <form class="data" action="ajax.php?process=deliver" method="POST">
+              <div class="collection">
+                <input class="field" type="text" placeholder="Full name" name="fullname"/>
+              </div>
+              <div class="collection">
+                <input class="field" type="text" placeholder="Mail address" name="from"/>
+              </div>
+              <div class="collection">
+                <input class="field" type="text" placeholder="Subject" name="subject"/>
+              </div>
+              <div class="collection">
+                <textarea class="area" placeholder="Message" name="message"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="wrap large">
+            <a class="button border fast" href="ajax.php">Send</a>
+          </div>
+          <div class="wrap large">
+            <div class="left size-6">
+              <div class="right">
+                <a class="coverage" href="http://www.linkedin.com/pub/grant-stampfli/24/5b3/252/" target="_blank"><img class="icon border fast" src="media/icon-linkedin.png" width="256" height="256" alt="LinkedIn"/></a>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="right size-6">
+              <div class="left">
+                <a class="coverage" href="http://www.github.com/grantstampfli" target="_blank"><img class="icon border fast" src="media/icon-github.png" width="256" height="256" alt="GitHub"/></a>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(function () {
+            $("#contact").substitute($("<p>Thank you</p>").attr("class", "button border fast"));
+          });
+        </script>
+      </div>
+      <div id="legal">
+        <div class="content">
+          <div class="wrap large">
+            <p class="copyright">&copy 2014 Grant Stampfli - All rights reserved</p>
+          </div>
+        </div>
+        <script type="text/javascript"></script>
+      </div>
 
   <!-- @if GULP_ENVIRONMENT='development' -->
   <script src="/scripts/templates.js"></script>
   <!-- @endif -->
-
 </body>
 </html>

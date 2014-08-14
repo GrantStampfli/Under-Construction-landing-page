@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans:400,300);
-
 /*** FONTS ***/
 
 @font-face {
@@ -79,12 +77,12 @@
   display: block;
   height: auto;
   width: auto;
-  margin: 10px 10px 10px 10px;
+  margin: 0px 10px 0px 10px;
   padding: 20px 20px 20px 20px;
   outline: 0;
   border: 0;
-  border-radius: 4px 4px 4px 4px;
-  background: transparent;
+  border-radius: 8px 8px 8px 8px;
+  background: rgba(0, 0, 0, 0.55);
   opacity: 1;
   font: 400 20px/20px OpenSans, Helvetica, Arial;
   color: #FFFFFF;
@@ -100,12 +98,12 @@
   display: block;
   height: auto;
   width: auto;
-  margin: 10px 10px 10px 10px;
+  margin: 0px 10px 0px 10px;
   padding: 20px 20px 20px 20px;
   outline: 0;
   border: 0;
-  border-radius: 4px 4px 4px 4px;
-  background: #FFFFFF;
+  border-radius: 8px 8px 8px 8px;
+  background: rgba(75, 75, 75, 0.55);
   opacity: 1;
   font: 400 20px/20px OpenSans, Helvetica, Arial;
   color: #000000;
@@ -125,8 +123,8 @@
   padding: 20px 20px 20px 20px;
   outline: 0;
   border: 0;
-  border-radius: 4px 4px 4px 4px;
-  background: rgba(255, 255, 255, 0.25);
+  border-radius: 8px 8px 8px 8px;
+  background: rgba(0, 0, 0, 0.55);
   opacity: 1;
 }
 
@@ -384,4 +382,286 @@
   border-radius: 0;
   background: transparent;
   opacity: 1;
+}
+
+/*** ABOUT ***/
+
+#about {
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 30px 30px 0 0;
+  background: transparent url(../media/pattern-light.png) repeat scroll center top;
+  opacity: .95;
+}
+
+#about .content {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 100px auto 100px auto;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#about .content .wrap .topic {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+  font: 700 50px/50px OpenSans, Helvetica, Arial;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+#about .content .wrap .summary {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+  font: 400 25px/25px OpenSans, Helvetica, Arial;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+#about .content .wrap .quote {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+  font: 400 20px/30px OpenSans, Helvetica, Arial;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+/*** CONTACT ***/
+
+#contact {
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent url(../media/pattern-dark.png) repeat scroll center top;
+  opacity: .95;
+}
+
+#contact .content {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 80px auto 50px auto;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+  max-width: 800px;
+}
+
+#contact .content .wrap .topic {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+  font: 700 50px/50px OpenSans, Helvetica, Arial;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+#contact .content .wrap .summary {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+  font: 400 20px/20px OpenSans, Helvetica, Arial;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+#contact .content .wrap .data {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#contact .content .wrap .coverage {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#contact .content .wrap .coverage .icon {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 30px 30px 30px 30px;
+  background: transparent;
+  opacity: 1;
+}
+
+/*** LEGAL ***/
+
+#legal {
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #000000;
+  opacity: 1;
+  border-radius: 0 0 30px 30px;
+  opacity: .75;
+}
+
+#legal .content {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#legal .content .wrap .copyright {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+  font: 300 14px/15px OpenSans, Helvetica, Arial;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
 }
