@@ -1,2 +1,188 @@
 @import url(http://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans:400,300);
 @import "custom";
+
+/*** GLOBAL ***/
+
+// ADD GLOBAL CSS
+
+/*** GALLERY ***/
+
+#gallery {
+  z-index: 0;
+  overflow: hidden;
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #000000;
+  opacity: 1;
+}
+
+#gallery .clock {
+  z-index: 1000000;
+  overflow: visible;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#gallery .slide {
+  z-index: 0;
+  overflow: visible;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent no-repeat scroll center center;
+  opacity: 1;
+}
+
+/*** BAR ***/
+
+#bar {
+  z-index: 1000;
+  overflow: hidden;
+  position: fixed;
+  display: block;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #000000;
+  opacity: 1;
+}
+
+#bar .content {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#bar .content .wrap .coverage {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#bar .content .wrap .coverage .logo {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 200px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+/*** NAV ***/
+
+#nav {
+  z-index: 1000;
+  overflow: hidden;
+  position: fixed;
+  display: block;
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#nav .content {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#nav .content .wrap .coverage {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: auto;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
+
+#nav .content .wrap .coverage .menu {
+  z-index: 0;
+  overflow: visible;
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+}
