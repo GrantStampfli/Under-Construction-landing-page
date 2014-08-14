@@ -1,4 +1,4 @@
-See the site: [Link to HOMEBASE](http://pdx.finer-code.com/)
+See the site: [Link to the site](http://soon.finer-code.com/)
 =============
 
-REPO/SITE name will change SOON...
+This is a nice under construction site that I now use.
