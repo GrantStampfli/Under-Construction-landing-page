@@ -85,3 +85,57 @@ class FRAMEWORK {
 
 $_FRAMEWORK = new FRAMEWORK();
 ?>
+<?php
+class API {
+  public $_MANDRILL = NULL;
+
+  public function mandrill($message, $subject, $from, $fullname, $to) { 
+    $url = "https://mandrillapp.com/api/1.0/messages/send.json";
+    $tmp["key"] = $this->_MANDRILL["key"];
+    $tmp["secret"] = $this->_MANDRILL["secret"];
+    $tmp["message[text]"] = $message;
+    $tmp["message[subject]"] = $subject;
+    $tmp["message[from_email]"] = $from;
+    $tmp["message[from_name]"] = $fullname;
+    $tmp["message[to][0][email]"] = $to;
+    foreach ($tmp as $key => $value) {
+      $parameters = isset($parameters) ? $parameters."&".$key."=".$value : $key."=".$value;
+    }
+    $request = curl_init($url);
+    curl_setopt($request, CURLOPT_POST, TRUE);
+    curl_setopt($request, CURLOPT_RETURNTRANSFER, TRUE);
+    curl_setopt($request, CURLOPT_POSTFIELDS, $parameters);
+    curl_setopt($request, CURLOPT_SSL_VERIFYPEER, FALSE);
+    $response = curl_exec($request);
+    curl_close($request);
+    return ($response);
+  }
+}
+
+$_API = new API();
+$_API->_MANDRILL["key"] = "P7cNp1GBdNH72Fh70BWYyQ";
+$_API->_MANDRILL["secret"] = "";
+?>
+<?php
+class PROCESS {
+  public function deliver() {
+    global $_FRAMEWORK;
+    global $_API;
+    
+    if (isset($_REQUEST["fullname"]) && isset($_REQUEST["from"]) && isset($_REQUEST["subject"]) && isset($_REQUEST["message"])) {
+      $message = strip_tags($_REQUEST["message"]);
+      $subject = strip_tags($_REQUEST["subject"]);
+      $from = strip_tags($_REQUEST["from"]);
+      $fullname = strip_tags($_REQUEST["fullname"]);
+      $to = strip_tags("grant@stampfli.email");
+      $_API->mandrill($message, $subject, $from, $fullname, $to);
+    }
+    return (0);
+  }
+}
+
+$_PROCESS = new PROCESS();
+if (isset($_REQUEST["process"]) && method_exists($_PROCESS, $_REQUEST["process"])) {
+  $_PROCESS->$_REQUEST["process"]();
+}
+?>
