@@ -13,6 +13,18 @@
     <link rel="shortcut icon" href="/favicon.ico">
 </head>
 <body>
+  <div class="spinload"></div>
+  <div id="gallery">
+    <canvas class="clock"></canvas>
+    <div class="slide slow" style="background-image: url(media/slide-1.jpg); background-size: cover;"></div>
+    <div class="slide slow" style="background-image: url(media/slide-2.jpg); background-size: cover;"></div>
+    <script type="text/javascript">
+      $(function () {
+        $("#gallery").engine();
+        $("#gallery").anim();
+      });
+    </script>
+  </div>
   <div class="content">
 
   </div>
